@@ -31,7 +31,7 @@ class BaseRepository implements IBaseRepository
      */
     public function all(array $columns = ['*'], array $relations = []): Collection
     {
-        return $this->model->with($relations)->get($columns);
+        return $this->model->with($relations)->orderBy('id', 'DESC')->get($columns);
     }
 
     /**
@@ -89,7 +89,7 @@ class BaseRepository implements IBaseRepository
      *
      * @param $query
      * @param array $paramsQuery
-     * @return Model
+     * @return array
     */
     public function selectByQuery($query, array $paramsQuery = []): array
     {
@@ -116,11 +116,11 @@ class BaseRepository implements IBaseRepository
      * @param array $payload
      * @return bool
      */
-    public function update(int $modelId, array $payload): bool
+    public function update(int $modelId, array $payload): Model
     {
         $model = $this->findById($modelId);
-
-        return $model->update($payload);
+        $model->update($payload);
+        return $model;
     }
 
     /**

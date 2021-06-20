@@ -19,7 +19,7 @@ class CreateEtudiantsTable extends Migration
             $table->string('school');
             $table->string('level');
             $table->timestamps();
-            $table->foreign('personne_id')->references('id')->on('personnes');
+            $table->foreign('personne_id')->references('id')->on('personnes')->onDelete('cascade');
         });
     }
 

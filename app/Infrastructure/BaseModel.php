@@ -2,12 +2,12 @@
 
 namespace App\Infrastucture;
 
-use App\Repository\EloquentRepositoryInterface;
+use App\Infrastucture\IBaseModel;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class BaseRepository implements EloquentRepositoryInterface
+class BaseRepository implements IBaseModel
 {
     /**
      * @var Model

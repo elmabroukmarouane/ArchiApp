@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Infrastucture;
+namespace App\Infrastucture\BaseRepository;
 
-use App\Infrastucture\IBaseModel;
+use App\Infrastucture\BaseRepository\IBaseRepository;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class BaseRepository implements IBaseModel
+class BaseRepository implements IBaseRepository
 {
     /**
      * @var Model

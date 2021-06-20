@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Infrastucture;
+namespace App\Infrastucture\BaseRepository;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Collection;
 
-interface IBaseModel
+interface IBaseRepository
 {
     /**
      * Get all models.

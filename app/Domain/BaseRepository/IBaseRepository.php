@@ -59,9 +59,10 @@ interface IBaseRepository
      * Select by SQL Query
      *
      * @param $query
-     * @return Model
+     * @param array $paramsQuery
+     * @return array
     */
-    public function selectByQuery($query): array;
+    public function selectByQuery($query, array $paramsQuery = []): array;
 
     /**
      * Create a model.
@@ -78,7 +79,7 @@ interface IBaseRepository
      * @param array $payload
      * @return bool
      */
-    public function update(int $modelId, array $payload): bool;
+    public function update(int $modelId, array $payload): Model;
 
     /**
      * Delete model by id.

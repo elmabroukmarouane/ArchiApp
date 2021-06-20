@@ -1,8 +1,8 @@
 <?php
 
-use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+use App\Infrastructure\Models\User;
 use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder

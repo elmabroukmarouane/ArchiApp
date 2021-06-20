@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Domain\UserRepository;
+namespace App\Domain\EtudiantRepository;
 
-use App\Domain\UserRepository\IUserRepository;
 use App\Domain\BaseRepository\BaseRepository;
-use App\Infrastructure\Models\User;
+use App\Infrastructure\Models\Etudiant;
 
-class UserRepository extends BaseRepository implements IUserRepository
+class EtudiantRepository extends BaseRepository implements IEtudiantRepository
 {
     /**
      * @var Model
@@ -18,7 +17,7 @@ class UserRepository extends BaseRepository implements IUserRepository
      *
      * @param Model $model
      */
-    public function __construct(User $model)
+    public function __construct(Etudiant $model)
     {
         $this->model = $model;
     }

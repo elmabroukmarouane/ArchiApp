@@ -1,8 +1,8 @@
 <?php
 
-use App\Models\Etudiant;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+use App\Infrastructure\Models\Etudiant;
 
 class EtudiantSeeder extends Seeder
 {

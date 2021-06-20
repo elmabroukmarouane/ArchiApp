@@ -1,8 +1,8 @@
 <?php
 
-use App\Models\Personne;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+use App\Infrastructure\Models\Personne;
 
 class PersonneSeeder extends Seeder
 {

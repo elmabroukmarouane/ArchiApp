@@ -2,9 +2,9 @@
 
 namespace App\Repository\Eloquent;
 
-use App\Infrastructure\UserRepository\IUserRepository;
-use App\Infrastucture\BaseRepository\BaseRepository;
-use App\Models\User;
+use App\Domain\UserRepository\IUserRepository;
+use App\Domain\BaseRepository\BaseRepository;
+use App\Infrastructure\Models\User;
 
 class UserRepository extends BaseRepository implements IUserRepository
 {
